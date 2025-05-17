@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>copia chat gpt</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    style="padding: 4px;">
+  <!-- Tu propio CSS -->
+  <link rel="stylesheet" href="./styles/estilo.css">
+</head>
+
+<body>
+  <header class="bg-light p-3">
+    <div class="container-fluid">
+      <div class="row align-items-center" style="background-color: black; height: 90px;">
+        <div class="col-2 d-flex align-items-center">
+          <img src="images/rog.jpg.png" alt="Logo">
+        </div>
+        <div class="col-8 d-flex justify-content-between align-items-center" style="background-color: black;">
+          <button class="btn btn-outline-secondary">Tienda</button>
+
+          <!-- Botón de Productos -->
+          <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuProductos" aria-expanded="false" aria-controls="menuProductos">
+              Productos
+            </button>
+          </div>
+
+          <!-- Botón de Innovación -->
+          <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuInnovacion" aria-expanded="false" aria-controls="menuInnovacion">
+              Innovación
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuDescargas" aria-expanded="false" aria-controls="menuDescargas">
+              Descargas
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuNovedades" aria-expanded="false" aria-controls="menuNovedades">
+              Novedades
+            </button>
+          </div>
+          <div><button class="btn btn-outline-secondary">Soporte</button></div>
+        </div>
+      </div>
+
+      <!-- Menú de Productos -->
+      <div class="collapse mt-3" id="menuProductos">
+        <ul class="list-group">
+          <li class="list-group-item">Portátiles</li>
+          <li class="list-group-item">PC's de escritorio</li>
+          <li class="list-group-item">Consolas</li>
+          <li class="list-group-item">Tarjetas madre</li>
+          <li class="list-group-item">Tarjetas gráficas</li>
+          <li class="list-group-item">Monitores</li>
+          <li class="list-group-item">Fuentes de alimentación</li>
+          <li class="list-group-item">Cases</li>
+          <li class="list-group-item">Refrigeración</li>
+          <li class="list-group-item">Teclados</li>
+          <li class="list-group-item">Ratones y pads mouse</li>
+          <li class="list-group-item">Auriculares y sonido</li>
+          <li class="list-group-item">Mochilas</li>
+          <li class="list-group-item">Kit de streaming</li>
+          <li class="list-group-item">Gadgets de energía y protección</li>
+        </ul>
+      </div>
+
+      <!-- Menú de Innovación -->
+      <div class="collapse mt-3" id="menuInnovacion">
+        <ul class="list-group">
+          <li class="list-group-item">Aura</li>
+          <li class="list-group-item">Armory Crate</li>
+          <li class="list-group-item">Refrigeración inteligente</li>
+          <li class="list-group-item">ROG Nebula Display y Nebula HDR</li>
+          <li class="list-group-item">Editor de píxeles de Anime Matrix</li>
+          <li class="list-group-item">2024 ROG Gaming Laptops</li>
+        </ul>
+      </div>
+      <div class="collapse mt-3" id="menuDescargas">
+        <ul class="list-group">
+          <li class="list-group-item">wallpaper</li>
+          <li class="list-group-item">Aura sinc</li>
+          <li class="list-group-item">Armory Crate</li>
+        </ul>
+      </div>
+      <div class="collapse mt-3" id="menuNovedades">
+        <ul class="list-group">
+          <li class="list-group-item">descubre tu proximo juego favorito</li>
+          <li class="list-group-item">windows 11</li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: rgb(255, 255, 255);
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .carrusel {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .carrusel-contenedor {
+      display: flex;
+      width: 800%; 
+      height: 100%;
+      transition: transform 1s ease-in-out;
+       
+    }
+
+    .carrusel-imagen {
+      width: 100vw;
+      height: 100vh;
+      flex-shrink: 0;
+    }
+
+    .carrusel-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="carrusel">
+      <div class="carrusel-contenedor" id="carruselContenedor">
+        <div class="carrusel-imagen"><img src="images/g17-1.png" alt="Imagen 1"></div>
+        <div class="carrusel-imagen"><img src="images/g17-2.png" alt="Imagen 2"></div>
+        <div class="carrusel-imagen"><img src="images/g17-3.png" alt="Imagen 3"></div>
+        <div class="carrusel-imagen"><img src="images/g17-4.png" alt="Imagen 4"></div>
+        <div class="carrusel-imagen"><img src="images/g17-5.png" alt="Imagen 5"></div>
+        <div class="carrusel-imagen"><img src="images/g17-6.png" alt="Imagen 6"></div>
+        <div class="carrusel-imagen"><img src="images/g17-7.png" alt="Imagen 7"></div>
+        <div class="carrusel-imagen"><img src="images/g17-8.png" alt="Imagen 8"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const contenedor = document.getElementById('carruselContenedor');
+    let indice = 0;
+    const totalSlides = 8; 
+    const intervalo = 3000; 
+
+    setInterval(() => {
+      indice = (indice + 1) % totalSlides;
+      contenedor.style.transform = `translateX(-${indice * 100}vw)`;
+    }, intervalo);
+  </script>
+
+   <section style="padding: 2rem; background-color: #000000bd; color: #ff0000;">
+    <h1>Asus ROG strix g17</h1>
+
+    <h2>Procesador</h2>
+    <p>AMD Ryzen 9 7945hx, ideal para Gaming y tareas de alto rendimiento.</p>
+
+    <h2>Memoria RAM</h2>
+    <p>32 GB DDR5 para rendimiento fluido con múltiples aplicaciones.</p>
+
+    <h2>Almacenamiento</h2>
+    <p>NVMe m.2 4.0 de 2T para velocidad de arranque y acceso a archivos.</p>
+
+    <h2>Tarjeta gráficas</h2>
+    <p>NVIDIA GeForce 4060 laptop.</p>
+
+    <h2>Pantalla</h2>
+    <p>Pantalla de 17.3inch FHD(1920x1080)16:9 con tecnologia G-Sync.</p>
+
+    <h2>Batería</h2>
+    <p>90WHrs, 4S1P, 4-cell Li-ion.</p>
+
+    <h2>Conectividad</h2>
+    <p>Wi-Fi 6, Bluetooth 5.3, puertos USB-C, HDMI y jack.</p>
+
+    <h2>Sistema Operativo</h2>
+    <p>Windows 11 Home preinstalado.</p>
+  </section>
+  </main>
+
+
+
+
+  <footer>
+
+
+  </footer>
+
+  <!-- Bootstrap Bundle con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
